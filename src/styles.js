@@ -10,23 +10,33 @@ module.exports = {
         backgroundColor: 'rgba(0,0,0,0.3)'
     },
     dialogStyles: {
-        width: '50%',
-        height: '400px',
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        marginTop: '-200px',
-        marginLeft: '-25%',
         backgroundColor: '#fff',
-        borderRadius: '2px',
         zIndex: 100,
         padding: '10px',
-        boxShadow: '0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)'
+        boxShadow: '0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)',
+
+        position:      'absolute',
+        width:         '80%',
+        height:        'auto',
+        top:           '80px',
+        left:          '10%',
+        margin:        '0 0 20px',
+        borderRadius:  '3px'
     },
     closeButtonStyle: {
         cursor: 'pointer',
         float: 'right',
         fontSize: '1.6em',
         margin: '-15px 0'
-    }
+    },
+    sectionStyles: {
+         display: 'none',
+         position: 'fixed',
+         left: '0',
+         top: '0',
+         width: '100%',
+         height: '100%',
+         overflowY: 'scroll',
+         zIndex: 1
+   }
 };

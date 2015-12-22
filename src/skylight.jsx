@@ -59,13 +59,16 @@ var SkyLight = React.createClass({
         var dialogStyles = extend(styles.dialogStyles, this.props.dialogStyles);
         var overlayStyles = extend(styles.overlayStyles, this.props.overlayStyles);
         var closeButtonStyle = extend(styles.closeButtonStyle, this.props.closeButtonStyle);
+        var sectionStyles = styles.sectionStyles;
 
         if (this.state.isVisible) {
             overlayStyles.display = 'block';
             dialogStyles.display = 'block';
+            sectionStyles.display = 'block';
         } else {
             overlayStyles.display = 'none';
             dialogStyles.display = 'none';
+            sectionStyles.display = 'none';
         }
 
         if (this.props.showOverlay) {
@@ -73,7 +76,7 @@ var SkyLight = React.createClass({
         }
 
         return (
-            <section className="skylight-wrapper">
+            <section className="skylight-wrapper" style={ sectionStyles }>
                 {overlay}
                 <div style={dialogStyles}>
                     <a role="button" style={closeButtonStyle} onClick={this.hide}>&times;</a>
@@ -81,7 +84,7 @@ var SkyLight = React.createClass({
                     {this.props.children}
                 </div>
             </section>
-        )
+         );
     }
 });
 
