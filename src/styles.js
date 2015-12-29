@@ -12,7 +12,7 @@ module.exports = {
     dialogStyles: {
         backgroundColor: '#fff',
         zIndex: 100,
-        padding: '10px',
+        padding: '1.875rem',
         boxShadow: '0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)',
 
         position:      'absolute',
